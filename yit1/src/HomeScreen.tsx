@@ -1,17 +1,16 @@
-import {View, Text, Image} from 'react-native';
+/* eslint-disable react-native/no-inline-styles */
+/* eslint-disable react/self-closing-comp */
+import {View, Text, Image, ImageBackground} from 'react-native';
 import React from 'react';
 
 type Props = {};
 
 const HomeScreen = (props: Props) => {
   return (
-    <View>
-      <Text>HomeScreen</Text>
-      <Image
-        source={require('./assets/img/avatar.png')}
-        style={{height: 100, width: 100}}
-      />
-    </View>
+    <ImageBackground
+      resizeMode="stretch"
+      style={{flex: 1}}
+      source={require('./assets/img/gradient_bg.png')}></ImageBackground>
   );
 };
 
