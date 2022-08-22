@@ -10,7 +10,21 @@ const HomeScreen = (props: Props) => {
     <ImageBackground
       resizeMode="stretch"
       style={{flex: 1}}
-      source={require('./assets/img/gradient_bg.png')}></ImageBackground>
+      source={require('./assets/img/gradient_bg.png')}>
+      <View
+        style={{
+          height: 70,
+          backgroundColor: '#FFF3',
+          margin: 30,
+          borderRadius: 10,
+        }}>
+        {/* Username entry */}
+        <View style={{flexDirection: 'row'}}>
+          {/* Icon */}
+          <View style={{backgroundColor: '#F00', height: 40, width: 40}} />
+        </View>
+      </View>
+    </ImageBackground>
   );
 };
 
