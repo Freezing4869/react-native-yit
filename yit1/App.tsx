@@ -9,7 +9,12 @@ const App = (props: Props) => {
 
   return (
     <View
-      style={{flexDirection: 'column', backgroundColor: '#000', height: 300}}>
+      style={{
+        flexDirection: 'column',
+        backgroundColor: '#000',
+        justifyContent: 'center',
+        flex: 1,
+      }}>
       <Text style={{...textStyle, backgroundColor: '#F00'}}>1111</Text>
       <Text style={{...textStyle, backgroundColor: '#030'}}>2222</Text>
       <Text style={{...textStyle, backgroundColor: '#0F0'}}>3333</Text>
