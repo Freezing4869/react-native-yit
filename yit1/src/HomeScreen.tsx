@@ -42,6 +42,34 @@ const HomeScreen = (props: Props) => {
             placeholder="Username"
           />
         </View>
+
+        {/* Divider       */}
+        <View style={{height: 16}} />
+
+        {/* Password entry */}
+        <View style={{flexDirection: 'row', alignItems: 'center'}}>
+          {/* Icon */}
+          <View
+            style={{
+              backgroundColor: '#FF0',
+              height: 40,
+              width: 40,
+              borderRadius: 20,
+              marginRight: 16,
+            }}
+          />
+          {/* TextField */}
+          <TextInput
+            style={{
+              borderWidth: 1,
+              borderColor: '#0007',
+              flex: 1,
+              paddingLeft: 16,
+              borderRadius: 15,
+            }}
+            placeholder="Password"
+          />
+        </View>
       </View>
     </ImageBackground>
   );
