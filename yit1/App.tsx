@@ -11,8 +11,11 @@ const textStyle = {
 };
 
 const App = (props: Props) => {
-  return <Demo1 />;
+  // return <Demo1 />;
+  return <Demo2 />;
 };
+
+const Demo2 = () => <View style={{backgroundColor: '#FF0', flex: 1}}></View>;
 
 const Demo1 = () => (
   <View
