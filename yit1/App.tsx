@@ -15,7 +15,11 @@ const App = (props: Props) => {
   return <Demo2 />;
 };
 
-const Demo2 = () => <View style={{backgroundColor: '#FF0', flex: 1}}></View>;
+const Demo2 = () => (
+  <View style={{backgroundColor: '#FF0', flex: 1}}>
+    <View style={{width: 100, height: 100, backgroundColor: '#F00'}} />
+  </View>
+);
 
 const Demo1 = () => (
   <View
