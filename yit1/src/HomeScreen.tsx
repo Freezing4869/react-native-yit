@@ -13,13 +13,13 @@ const HomeScreen = (props: Props) => {
       source={require('./assets/img/gradient_bg.png')}>
       <View
         style={{
-          height: 70,
+          padding: 20,
           backgroundColor: '#FFF3',
           margin: 30,
           borderRadius: 10,
         }}>
         {/* Username entry */}
-        <View style={{flexDirection: 'row'}}>
+        <View style={{flexDirection: 'row', alignItems: 'center'}}>
           {/* Icon */}
           <View
             style={{
@@ -27,10 +27,20 @@ const HomeScreen = (props: Props) => {
               height: 40,
               width: 40,
               borderRadius: 20,
+              marginRight: 16,
             }}
           />
           {/* TextField */}
-          <TextInput placeholder="Username" />
+          <TextInput
+            style={{
+              borderWidth: 1,
+              borderColor: '#0007',
+              flex: 1,
+              paddingLeft: 16,
+              borderRadius: 15,
+            }}
+            placeholder="Username"
+          />
         </View>
       </View>
     </ImageBackground>
