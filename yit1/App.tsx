@@ -5,14 +5,18 @@ import React from 'react';
 type Props = {};
 
 const App = (props: Props) => {
-  const textStyle = {backgroundColor: '#F00', color: '#FFF', fontSize: 30};
+  const textStyle = {
+    backgroundColor: '#F00',
+    color: '#FFF',
+    fontSize: 30,
+    flex: 1,
+  };
 
   return (
     <View
       style={{
         flexDirection: 'column',
         backgroundColor: '#000',
-        justifyContent: 'center',
         flex: 1,
       }}>
       <Text style={{...textStyle, backgroundColor: '#F00'}}>1111</Text>
