@@ -1,6 +1,13 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable react/self-closing-comp */
-import {View, Text, Image, ImageBackground, TextInput} from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  ImageBackground,
+  TextInput,
+  Button,
+} from 'react-native';
 import React from 'react';
 
 type Props = {};
@@ -70,6 +77,9 @@ const HomeScreen = (props: Props) => {
             placeholder="Password"
           />
         </View>
+
+        {/* Login Button    */}
+        <Button title="Login" />
       </View>
     </ImageBackground>
   );
